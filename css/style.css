@@ -1,0 +1,345 @@
+
+/*----------------header----------------*/
+
+header{
+    background-image: url(../img/hero-bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.layer{
+  background-color: rgba(0, 0, 0, 0.5); 
+}
+
+/*typing*/
+.caption h2::after{
+    content: '';
+    animation-name: typing;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes typing{
+    0% {
+        content: 'D|';
+    }
+    2% {
+        content: 'Des|';
+    }
+    4% {
+        content: 'Desi|';
+    }
+    6% {
+        content: 'Desig|';
+    }
+    8% {
+        content: 'Design|';
+    }
+    10% {
+        content: 'Designe|';
+    }
+    12% {
+        content: 'Designer|';
+    }
+    14% {
+        content: 'Designe|';
+    }
+    16% {
+        content: 'Design|';
+    }
+    18% {
+        content: 'Desig|';
+    }
+    20% {
+        content: 'Desi|';
+    }
+    22% {
+        content: 'Des|';
+    }
+    24% {
+        content: 'De|';
+    }
+    26% {
+        content: 'D|';
+    }
+    28% {
+        content: '|';
+    }
+    30% {
+        content: 'D|';
+    }
+    32% {
+        content: 'De|';
+    }
+    34% {
+        content: 'Dev|';
+    }
+    36% {
+        content: 'Deve|';
+    }
+    38% {
+        content: 'Devel|';
+    }
+    40% {
+        content: 'Develo|';
+    }
+    42% {
+        content: 'Develop|';
+    }
+    44% {
+        content: 'Develope|';
+    }
+    46% {
+        content: 'Developer|';
+    }
+    48% {
+        content: 'Develope|';
+    }
+    50% {
+        content: 'Develop|';
+    }
+
+    53% {
+        content: 'Develo|';
+    }
+    56% {
+        content: 'Devel|';
+    }
+    59% {
+        content: 'Deve|';
+    }
+    62% {
+        content: 'Dev|';
+    }
+    65% {
+        content: 'De|';
+    }
+    68% {
+        content: 'D|';
+    }
+    71% {
+        content: '|';
+    }
+    74% {
+        content: 'F|';
+    }
+    77% {
+        content: 'Fr|';
+    }
+    80% {
+        content: 'Free|';
+    }
+    83% {
+        content: 'Freela|';
+    }
+    86% {
+        content: 'Freelanc|';
+    }
+    89% {
+        content: 'Freelancer|';
+    }
+    92% {
+        content: 'Free|';
+    }
+    94% {
+        content: 'F|';
+    }
+    0% {
+        content: '|';
+    }
+}
+/*typing end*/
+
+/*
+navbar
+*/
+.dropdown1:hover .menu1{
+    display: block;
+}
+.dropdown2:hover .menu2{
+    display: block;
+}
+.menu2{
+    right: 100%;
+}
+
+.nav-link ,.navbar-brand{
+    color:#fff;
+}
+.nav-link:hover{
+    color: #fff;
+}
+.navbar-brand:hover{
+    color: #fff;
+}
+
+.nav-link{
+    position: relative;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.navbar-nav{
+    width: 60%;
+}
+.nav-link::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 0%;
+    background: #fff;
+    transition: width 1s;
+}
+.nav-link:hover::before{
+    width: 90%;
+}
+/*
+/navbar
+*/
+
+/*----------------header end----------------*/
+
+
+/*----------------about----------------*/
+.brd{
+    background-color: #007aff;
+    width: 25%;
+    height: 3px;
+    margin-bottom: 5px;
+}
+
+/*------------------services-----------------------*/
+
+.icon{
+text-align: center;
+margin: o 5px ;
+width: 50px;
+height: 50px;
+border: solid 5px rgba(0, 119, 255, 1);
+}
+.item h4{
+    margin-top: 50px;
+}
+.item:hover i{
+    background-color: #007aff;
+    color: #007aff;
+}
+.item :hover .icon{
+    transition: all 500ms ease;
+    color: #fff;
+    background-color: #0078ff;
+    box-shadow: 0 0 0 10px #cde1f8;
+}
+/*-------------------icon section---------------------*/
+
+.layer1{
+    background-color : rgba(0, 119, 255, 0.563);
+    padding: 60px 0;
+    
+}
+
+.icons {
+    background-image: url(../img/counters-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+ 
+.icons i{
+    width: 70px;
+    height: 70px;
+    display: flex !important;
+    margin: 20px auto;
+    justify-content:center;
+    align-items: center;
+    border-radius: 50%;
+    border: solid #fff 3px;
+
+}
+
+
+
+/*-----------Portfo---------------------*/
+.work-box {
+    margin-bottom: 3rem;
+    background-color: #fff;
+  }
+  .work-box:hover img {
+    transform: scale(1.3);
+  }
+  
+  .work-img {
+    display: block;
+    overflow: hidden;
+  }
+  .work-img img {
+    transition: all 1s;
+  }
+  
+  .work-content {
+    padding: 5px;
+  }
+  .work-content .w-more {
+    color: #4e4e4e;
+    font-size: 0.8rem;
+  }
+  .work-content .w-more .w-ctegory {
+    color: #0078ff;
+  }
+  .work-content .w-like {
+    font-size: 2.5rem;
+    color: #0078ff;
+    float: right;
+  }
+  .work-content .w-like a {
+    color: #0078ff;
+  }
+  .work-content .w-like .num-like {
+    font-size: 0.7rem;
+  }
+  
+  .w-title {
+    font-size: 1.2rem;
+  }
+  
+
+  /*comments*/
+  .comment{
+      background-image: url(../img/overlay-bg.jpg);
+      background-size:cover ;
+      background-position:center ;
+  }
+
+
+  .carousel-indicators [data-bs-target]{
+      height: 10px;
+      width: 10px;
+      border-radius: 50%;
+  }
+
+
+
+  /*blog*/
+
+
+ .itemm .box img{
+      width: 25px;
+      height: 25px;
+  }
+  
+
+  /*contact*/
+  .contact{
+    background-image: url(../img/overlay-bg.jpg);
+    background-size:cover ;
+    background-position:center ;
+  }  
+
+ .social i{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 4px soild #0078ff;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+ }
